@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tambah Titik</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; }
+        .container { max-width: 500px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: auto; }
+        h2 { margin-top: 0; }
+        label { display: block; margin-top: 12px; font-weight: bold; }
+        input, select { padding: 8px; width: 100%; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        button { margin-top: 20px; padding: 10px; width: 100%; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #218838; }
+        #map { height: 300px; margin-top: 15px; border-radius: 4px; border: 1px solid #ccc; }
+        .back-link { display: block; margin-top: 15px; text-align: center; color: #666; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Tambah Titik Layanan</h2>
+    <form id="f">
+        <label>Nama</label>
+        <input id="nama" placeholder="Contoh: Kantor Pos Merdeka" required>
+        
+        <label>Kategori</label>
+        <select id="kategori" required>
+            <option value="KC">KC</option>
+            <option value="KCP">KCP</option>
+            <option value="AGENPOS">AGENPOS</option>
+        </select>
+        
+        <label>Kecamatan</label>
+        <input id="kecamatan" placeholder="Contoh: Coblong">
+        
+        <label>Alamat</label>
+        <input id="alamat" placeholder="Nama Jalan No. 123">
+        
+        <label>Latitude</label>
+        <input id="lat" required readonly>
+        
+        <label>Longitude</label>
+        <input id="lng" required readonly>
+        
+        <button type="submit">Simpan Titik</button>
+    </form>
+
+    <p style="font-size: 0.9em; color: #555;">Klik pada peta untuk mengambil koordinat otomatis:</p>
+    <div id="map"></div>
+    
+    <a href="/" class="back-link">← Kembali ke Peta Utama</a>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    // Kosongkan agar otomatis mengikuti domain tempat deploy
+    const API_ROOT = ''; 
+    const map = L.map('map').setView([-6.9, 107.56], 12);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    
+    let marker;
+
+    // Ambil koordinat saat peta diklik
+    map.on('click', function(e){
+        const lat = e.latlng.lat.toFixed(6);
+        const lng = e.latlng.lng.toFixed(6);
+        document.getElementById('lat').value = lat;
+        document.getElementById('lng').value = lng;
+        
+        if(marker) map.removeLayer(marker);
+        marker = L.marker([lat, lng]).addTo(map);
+    });
+
+    // Handle pengiriman form
+    document.getElementById('f').onsubmit = async function(e){
+        e.preventDefault();
+        
+        const bodyData = {
+            nama: document.getElementById('nama').value,
+            kategori: document.getElementById('kategori').value,
+            kecamatan: document.getElementById('kecamatan').value,
+            alamat: document.getElementById('alamat').value,
+            lat: parseFloat(document.getElementById('lat').value),
+            lng: parseFloat(document.getElementById('lng').value)
+        };
+
+        try {
+            // DISESUAIKAN: Menggunakan path /api/titik sesuai server.js
+            const res = await fetch(API_ROOT + '/api/titik', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(bodyData)
+            });
+
+            if(res.ok){
+                alert('Berhasil! Titik telah tersimpan.');
+                window.location.href = '/';
+            } else {
+                const err = await res.json();
+                alert('Gagal menyimpan: ' + (err.error || 'Terjadi kesalahan server'));
+            }
+        } catch (error) {
+            console.error("Error submit:", error);
+            alert('Tidak dapat terhubung ke server.');
+        }
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "my-gis-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node backend/server.js",
+    "install-all": "cd backend && npm install"
+  }
+}

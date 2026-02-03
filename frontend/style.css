@@ -1,0 +1,16 @@
+*{box-sizing:border-box;font-family:Arial, sans-serif}
+#container{display:flex;height:100vh;margin:0}
+#sidebar{width:380px;padding:16px;background:#f8f9fb;border-right:1px solid #ddd;overflow:auto}
+#sidebar h1{margin:0 0 12px 0;font-size:20px}
+#controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+#controls input,#controls select{padding:8px;border:1px solid #ccc;border-radius:4px}
+#controls button{padding:8px 10px;border-radius:4px;border:1px solid #2d89ef;background:#2d89ef;color:#fff;cursor:pointer}
+#kantorTable{width:100%;border-collapse:collapse}
+#kantorTable th,#kantorTable td{padding:6px;border:1px solid #e6e6e6;text-align:left;font-size:13px}
+#kantorTable tbody tr{cursor:pointer}
+#kantorTable tbody tr:hover{background:#eef}
+#map{flex:1}
+#legend{margin-top:12px}
+.legend-item{display:flex;align-items:center;gap:8px;margin:4px 0}
+.legend-color{width:20px;height:14px;border-radius:3px;border:1px solid rgba(0,0,0,0.12)}
+.action-btn{padding:4px 6px;border-radius:4px;border:1px solid #c33;background:#c33;color:#fff;cursor:pointer;font-size:12px}

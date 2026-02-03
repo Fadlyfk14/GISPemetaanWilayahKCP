@@ -1,0 +1,209 @@
+[
+  {
+    "id": 1,
+    "nama": "KOTAMOBAGU 95700",
+    "kategori": "KC",
+    "kecamatan": "KOTAMOBAGU BARAT",
+    "alamat": "Jalan A. Yani, Kelurahan Gogagoman, Kecamatan Kotamobagu Barat, Kota Kotamobagu, Sulawesi Utara",
+    "lat": 0.7398,
+    "lng": 124.3111
+  },
+  {
+    "id": 2,
+    "nama": "KCP DUMOGA",
+    "kategori": "KCP",
+    "kecamatan": "DUMOGA",
+    "alamat": "DUMOGA",
+    "lat": 0.622475,
+    "lng": 124.082336
+  },
+  {
+    "id": 3,
+    "nama": "KCP PASSI TIMUR",
+    "kategori": "KCP",
+    "kecamatan": "PASSI TIMUR",
+    "alamat": "PASSI TIMUR",
+    "lat": 0.77787,
+    "lng": 124.350385
+  },
+  {
+    "id": 4,
+    "nama": "KCP PASSI BARAT",
+    "kategori": "KCP",
+    "kecamatan": "PASSI BARAT",
+    "alamat": "PASSI BARAT",
+    "lat": 0.785691,
+    "lng": 124.234944
+  },
+  {
+    "id": 5,
+    "nama": "KCP INOBONTO",
+    "kategori": "KCP",
+    "kecamatan": "INOBONTO",
+    "alamat": "Inobonto",
+    "lat": 0.916826,
+    "lng": 124.101564
+  },
+  {
+    "id": 6,
+    "nama": "KCP POIGAR",
+    "kategori": "KCP",
+    "kecamatan": "POIGAR",
+    "alamat": "POIGAR",
+    "lat": 0.998895,
+    "lng": 124.292664
+  },
+  {
+    "id": 7,
+    "nama": "KCP MAELANG",
+    "kategori": "KCP",
+    "kecamatan": "MAELANG",
+    "alamat": "MAELANG",
+    "lat": 0.839871,
+    "lng": 123.830809
+  },
+  {
+    "id": 8,
+    "nama": "KCP BINTAUNA",
+    "kategori": "KCP",
+    "kecamatan": "BINTAUNA",
+    "alamat": "BINTAUNA",
+    "lat": 0.880808,
+    "lng": 123.548684
+  },
+  {
+    "id": 9,
+    "nama": "KCP BOLANGITANG",
+    "kategori": "KCP",
+    "kecamatan": "BOLANGITANG",
+    "alamat": "BOLANGITANG",
+    "lat": 0.908056,
+    "lng": 123.303553
+  },
+  {
+    "id": 10,
+    "nama": "KCP BUROKO",
+    "kategori": "KCP",
+    "kecamatan": "BUROKO",
+    "alamat": "BUROKO",
+    "lat": 0.906168,
+    "lng": 123.262396
+  },
+  {
+    "id": 11,
+    "nama": "KCP LOLAYAN",
+    "kategori": "KCP",
+    "kecamatan": "MOPAIT",
+    "alamat": "LOLAYAN",
+    "lat": 0.685953,
+    "lng": 124.276057
+  },
+  {
+    "id": 12,
+    "nama": "KCP IMANDI",
+    "kategori": "KCP",
+    "kecamatan": "IMANDI",
+    "alamat": "IMANDI",
+    "lat": 0.579884,
+    "lng": 124.069118
+  },
+  {
+    "id": 13,
+    "nama": "KCP MOPUYA",
+    "kategori": "KCP",
+    "kecamatan": "MOPUYA",
+    "alamat": "MOPUYA",
+    "lat": 0.51414,
+    "lng": 123.960631
+  },
+  {
+    "id": 14,
+    "nama": "KCP MOLIBAGU",
+    "kategori": "KCP",
+    "kecamatan": "MOLIBAGU",
+    "alamat": "MOLIBAGU",
+    "lat": 0.3866,
+    "lng": 123.982945
+  },
+  {
+    "id": 15,
+    "nama": "KCP POSIGADAN ",
+    "kategori": "KCP",
+    "kecamatan": "POSIGADAN",
+    "alamat": "POSIGADAN",
+    "lat": 0.322303,
+    "lng": 123.569927
+  },
+  {
+    "id": 16,
+    "nama": "KCP PINOLOSIAN",
+    "kategori": "KCP",
+    "kecamatan": "TOLOTOYON",
+    "alamat": "PINOLOSIAN",
+    "lat": 0.400957,
+    "lng": 124.120874
+  },
+  {
+    "id": 17,
+    "nama": "KCP MODAYAG",
+    "kategori": "KCP",
+    "kecamatan": "PUWOREJO",
+    "alamat": "MODAYAG",
+    "lat": 0.710901,
+    "lng": 124.389739
+  },
+  {
+    "id": 18,
+    "nama": "KCP MODOINDING",
+    "kategori": "KCP",
+    "kecamatan": "SINISIR",
+    "alamat": "MODOINDING",
+    "lat": 0.797524,
+    "lng": 124.45055
+  },
+  {
+    "id": 19,
+    "nama": "KCP TOMPASO BARU",
+    "kategori": "KCP",
+    "kecamatan": "TOMPASO BARU",
+    "alamat": "TOMPASO BARU",
+    "lat": 0.93046,
+    "lng": 124.474583
+  },
+  {
+    "id": 20,
+    "nama": "KCP PARET",
+    "kategori": "KCP",
+    "kecamatan": "PARET",
+    "alamat": "PARET",
+    "lat": 0.796151,
+    "lng": 124.630881
+  },
+  {
+    "id": 21,
+    "nama": "KCP TUTUYAN ",
+    "kategori": "KCP",
+    "kecamatan": "TUTUYAN",
+    "alamat": "TUTUYAN",
+    "lat": 0.757369,
+    "lng": 124.612254
+  },
+  {
+    "id": 22,
+    "nama": "KCP NUANGAN",
+    "kategori": "KCP",
+    "kecamatan": "NUANGAN",
+    "alamat": "NUANGAN",
+    "lat": 0.600847,
+    "lng": 124.520758
+  },
+  {
+    "id": 23,
+    "nama": "KCP LOLAK",
+    "kategori": "KCP",
+    "kecamatan": "LOLAK",
+    "alamat": "LOLAK",
+    "lat": 0.868659,
+    "lng": 124.001316
+  }
+]
