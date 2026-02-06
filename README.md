@@ -49,4 +49,5 @@ Proyek ini dikembangkan oleh:
 | :--- | :--- |
 | **714252022** | Salsabila Tasya Ramadhani Suwetty |
 | **714252031** | Salsa Dewinta |
-| **714252014** |
+| **714252014** | Fadly Ferdiansyah Kurnia |
+| **714252009** | Adita Julian |
